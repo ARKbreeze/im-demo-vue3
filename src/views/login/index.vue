@@ -16,6 +16,7 @@
 
 <script setup>
   import { reactive } from 'vue';
+  import { useImBridge } from './hooks/useImBridge';
   import useAccountStore from '@/store/useAccountStore.js';
   const accountStore = useAccountStore();
 
