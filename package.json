@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "serve": "cross-env ENV=dev vue-cli-service serve",
+    "serve:pro": "cross-env ENV=pro vue-cli-service serve",
+    "serve:test": "cross-env ENV=test vue-cli-service serve",
+    "build:pro": "cross-env ENV=pro vue-cli-service build",
+    "build:test": "cross-env ENV=test vue-cli-service build"
   },
   "dependencies": {
     "core-js": "^3.8.3",
